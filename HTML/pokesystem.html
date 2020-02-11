@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>pokesystem</title>
+</head>
+
+<style>
+    form {
+        /*Colocar a tela no meio*/
+        margin: 0 auto;
+        width: 400px;
+        border: 1px solid #ccc;
+        border-radius: 1em;
+        padding: 10px;
+        background-color: slategray;
+    }
+
+    form div + div {
+        margin-top: 15px;
+    }
+
+    label {
+        text-align: right;
+        display: inline-block;
+        width: 80px;
+    }
+
+    textarea {
+        font: 12px sans-serif;
+        width: 300px;
+        border: 1px solid teal;
+        box-sizing: border-box;
+        border-radius: 3px;
+        vertical-align: top;
+        height: 100px;
+    }
+
+    input {
+        width: 299px;
+        border: 1px solid teal;
+    }
+
+    h3{
+        text-align: center;
+    }
+
+    button {
+        margin-left: 330px;
+    }
+
+    #poder input{
+        width: 50px;
+    }
+    
+</style>
+
+<body>
+
+    <form action="contato.php" method="GET">
+    <div name="titulo">
+        <h3>PokeSystem</h3>
+        <div>
+
+                <div type="nome">
+                    <label>Nome:</label>
+                    <input type="text" id="nome_pokemon" placeholder="Digite o Nome do Pokemón">
+                </div>
+
+                <div name="tipo">
+                    <label>Tipo:</label>
+                    <select id="Tipo">
+                        <option value="">--Selecione</option>
+                        <option value="Eletrico">Elétrico</option>
+                        <option value="Fogo">Fogo</option>
+                        <option value="Agua">Água</option>
+                        <option value="Terra">Terra</option>
+                        <option value="Gelo">Gelo</option>
+                        <option value="Psiquico">Psiquico</option>
+                        <option value="Planta">Planta</option>
+                    </select>
+                </div>
+
+                <div id="poder">
+                        <div nome="ataque">
+                            <label>Ataque:</label>
+                            <input type="number" id="ataque" placeholder="0-100" maxlength="3">
+                            <label>Evoluído?</label>
+                        </div>
+
+                        <div nome="defesa">
+                            <label>Defesa:</label>
+                            <input type="number" id="defesa" placeholder="0-100" maxlength="3">
+                            <input type="radio" name="evoluido" checked> Sim
+                            <input type="radio" name="evoluido"> Não
+                        </div>
+                </div>
+                        <div name="descricao">
+                        <label>Descrição:</label>
+                        <textarea id="mensagem_pokemon" placeholder="Quais as características desse pokemón?"></textarea>
+                        </div>
+                        
+                        <div name="botao">
+                            <button id="Salvar">Salvar</button>
+                        </div>
+</body>
+</html>
