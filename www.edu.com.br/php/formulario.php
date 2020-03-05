@@ -9,11 +9,11 @@
 
       <!-- Custom fonts for this theme -->
   <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
 
   <!-- Theme CSS -->
-  <link href="../css/freelancer.min.css" rel="stylesheet">
+ 
 </head>
 <body>
 
@@ -80,10 +80,10 @@
   <!-- Contact Form JavaScript -->
   <script src="../js/jqBootstrapValidation.js"></script>
   <script src="../js/contact_me.js"></script>
-  <script src="../js/formulario.js"></script>
-
+  
   <!-- Custom scripts for this template -->
   <script src="../js/freelancer.min.js"></script>
+  <script src="../js/formulario.js"></script>
 
 </body>
 </html>
